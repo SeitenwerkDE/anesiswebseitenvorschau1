@@ -1,0 +1,24 @@
+/* ANESIS SOLTAU – Cookie-Hinweis (DSGVO) */
+#cb-overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:99998;opacity:0;transition:opacity .25s ease}
+#cb-overlay.cb-show{opacity:1}
+#cb-banner{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);width:min(680px,calc(100% - 32px));background:#282723;color:#f7f3ea;border:1px solid #414238;border-radius:14px;box-shadow:0 18px 50px rgba(0,0,0,.45);padding:24px 26px;z-index:99999;font-family:inherit;opacity:0;transition:opacity .25s ease,transform .25s ease}
+#cb-banner.cb-show{opacity:1;transform:translate(-50%,0)}
+#cb-banner h2{margin:0 0 8px;font-size:1.15rem;color:#eee7db;letter-spacing:.02em}
+#cb-banner p{margin:0 0 16px;font-size:.9rem;line-height:1.55;color:#ddd6c5}
+#cb-banner a{color:#e6ded1;text-decoration:underline}
+#cb-banner a:hover{color:#fff}
+.cb-buttons{display:flex;flex-wrap:wrap;gap:10px}
+.cb-btn{cursor:pointer;border-radius:9999px;padding:10px 18px;font-size:.9rem;font-weight:600;border:1px solid transparent;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
+.cb-btn-accept{background:#282723;color:#f7f3ea;border-color:#eee7db}
+.cb-btn-accept:hover{background:#414238}
+.cb-btn-decline{background:transparent;color:#eee7db;border-color:#414238}
+.cb-btn-decline:hover{border-color:#e6ded1}
+.cb-btn-settings{background:transparent;color:#ddd6c5;border-color:transparent;text-decoration:underline}
+.cb-btn-settings:hover{color:#fff}
+.cb-details{margin-top:14px;border-top:1px solid #414238;padding-top:14px;display:none}
+.cb-details.cb-open{display:block}
+.cb-cat{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;font-size:.88rem;color:#ddd6c5}
+.cb-cat input{margin-top:3px;accent-color:#eee7db;width:16px;height:16px}
+.cb-cat strong{color:#eee7db;display:block;margin-bottom:2px}
+.cb-cat small{color:#b9b2a2;line-height:1.45;display:block}
+@media (max-width:520px){#cb-banner{padding:18px;bottom:12px}.cb-buttons{flex-direction:column}.cb-btn{width:100%}}
